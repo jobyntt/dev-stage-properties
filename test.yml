@@ -1,0 +1,14 @@
+server:
+  port: 1111   
+---
+#DEBUG
+logging:
+  level:
+     root: INFO
+     org:
+       springframework:
+         security: INFO
+---
+who:
+ am:
+   i: Cloud Config  Client

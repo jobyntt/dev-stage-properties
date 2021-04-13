@@ -1,0 +1,11 @@
+stage: DEV
+---
+management:
+  endpoints:
+    web.exposure.include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+#This configuration is required to expose logfile in spring boot admin : http://codecentric.github.io/spring-boot-admin/current/#logfile
+logging:
+  file: ${log_folder:''}${spring.application.name}.log  
